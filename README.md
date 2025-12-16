@@ -142,15 +142,10 @@ Ingrese opción:
 
 ---
 
-**Nota:** Este proyecto fue desarrollado para practicar el uso de colecciones Java (List, Map, Set) y estructuras de control en aplicaciones de consola.
-
-**Versión:** 1.0 | **Tecnología:** Java Collections Framework
-```
-
-Este README.md incluye:
-1. ✅ Descripción clara del proyecto
-2. ✅ Explicación detallada de la estructura de datos
-3. ✅ Instrucciones claras de ejecución
-4. ✅ Ejemplo completo del menú y flujo de uso
-5. ✅ Formato markdown profesional con tablas y código
-6. ✅ Características técnicas y consideraciones importantes
+## Integrantes:
+- Tiago
+- Brahim
+- Belén
+- Hector
+- Diego
+- Francis
