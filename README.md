@@ -1,4 +1,3 @@
-```markdown
 # 🐾 Refugio de Animales - Sistema de Gestión
 
 ## 📋 Descripción del Proyecto
