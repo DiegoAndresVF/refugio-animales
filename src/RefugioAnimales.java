@@ -1,14 +1,7 @@
-import java.util.List;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.HashMap;
-import java.util.ArrayList;
+import java.util.*;
 
 public class RefugioAnimales {
     static List<String> animales = new ArrayList<>();
-    ;   //nombre de la mascota
     static Map<String, String> estadoAnimal = new HashMap<>();
     static Set<String> especies = new HashSet<>(List.of("perro", "gato", "conejo"));
     static Map<String, String> animalEspecie = new HashMap<>();
@@ -39,7 +32,6 @@ public class RefugioAnimales {
         }
         System.out.print("Ingrese la especie:");
         String especie = sc.next().toLowerCase();
-        //especie.toLowerCase();
         boolean existeEspecie = especies.contains(especie);
         if (existeEspecie) {
             animalEspecie.put(nombre, especie);
@@ -122,7 +114,14 @@ public class RefugioAnimales {
         do {
             menu();
             System.out.print("Ingrese opción: ");
+            //validar que se ingrese un número:
+            while(!sc.hasNextInt()){
+                System.out.println("> No se ha ingresado un número válido");
+                System.out.print("Ingrese un número válido: ");
+                sc.next();
+            }
             op = sc.nextInt();
+
             switch (op) {
                 case 1 -> registrarAnimal();
                 case 2 -> registrarEspecie();
